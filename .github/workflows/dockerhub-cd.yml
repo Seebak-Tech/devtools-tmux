@@ -40,6 +40,5 @@ jobs:
             seebaktec/tmux:latest
             seebaktec/tmux:${{ env.CONTAINER_VERSION }} 
 
-
       - name: Image digest
-        run: echo ${{ steps.build_zsh.outputs.digest }}
+        run: echo ${{ steps.build_tmux.outputs.digest }}
